@@ -1,0 +1,16 @@
+RESTful API Modeling Language (RAML) makes it easy to bring about the whole API development from design to sharing. 
+Is like we can write what we need to define and reuse the same. It is machine readable API design that is actually good thing.
+RAML is about REST API documentation creativity supported by MuleSoft. 
+It’s a good approach to create a plugin for SoapUI that allows you import RAML files into SoapUI for testing of its distinct APIs.
+It is looks similar to benefits like WADL to some extend but with some new features. 
+It’s a good approach to create a plugin for SoapUI that allows you import RAML files into SoapUI for testing of its distinct APIs.
+
+Since the core model of all these REST metadata formats is very similar (creating the plugin was rather straight-forward 
+given that SoapUI already has pretty solid REST service and testing support. RAML itself uses YAML and comes with a java-parser which 
+can be used to parse RAML files and resolve the described API model - the plugin uses this to resolve and traverse RAML files and 
+create corresponding SoapUI objects.
+
+Basic Things to Note while working with RAML.
+-	RAML definition as a text file with a recommended extension .raml.
+-	Only lower-case for methods should be used for RAML API definition
+-	URI parameter, should be denoted by surrounding curly brackets in RAML
